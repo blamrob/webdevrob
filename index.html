@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Online Portfolio & Resume for Robert Lammers</title>
+
+<meta charset="utf-8">
+<link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="robApp" ng-controller="robCtrl1">
+
+<video playsinline autoplay loop muted poster="/assets/city.jpg" id="bgvid" width="1280" height="720"><source src="/assets/city.mp4" type="video/mp4"></video>
+
+<div id="bgmobi"></div>
+
+<!-- <div id="bgvideo" ng-bind-html="randVid"></div> -->
+
+<header id="deskhead">
+	<div class="logo"><a href="#/">Rob Lammers</a></div>
+	<nav id="nav1">
+		<ul>
+			<li ng-class="homeActive"><a href="#/">Home</a></li>
+			<li ng-class="portfolioActive"><a href="#/portfolio">Portfolio</a></li>
+			<li ng-class="resumeActive"><a href="#/resume">Resume</a></li>
+			<li class="da"><a href="http://blamrob.deviantart.com/gallery/" target="_blank">Illustration</a><span>Gallery on deviantArt</span></li>
+		</ul>
+	</nav>
+</header>
+
+<header id="mobihead">
+	<div class="logo"><a href="#/">Rob Lammers</a></div>
+	<div class="hamburger mn-open fa fa-bars"></div>
+</header>
+
+<nav id="mobinav1">
+	<div class="mn-close fa fa-close"></div>
+	<div class="vcbox1">
+		<div class="vcbox2">
+			<ul>
+				<li ng-class="homeActive"><a href="#/">Home</a></li>
+				<li ng-class="portfolioActive"><a href="#/portfolio">Portfolio</a></li>
+				<li ng-class="resumeActive"><a href="#/resume">Resume</a></li>
+				<li class="da"><a href="http://blamrob.deviantart.com/gallery/" target="_blank">Illustration</a>
+					<span>Gallery on deviantArt</span></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div id="main" ng-view></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
